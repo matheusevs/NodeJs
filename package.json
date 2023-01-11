@@ -1,0 +1,19 @@
+{
+  "name": "restful",
+  "version": "0.0.1",
+  "description": "Json gerado para facilitar instalação de dependências",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matheusevs/NodeJs.git"
+  },
+  "author": "Matheus Eduardo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/matheusevs/NodeJs/issues"
+  },
+  "homepage": "https://github.com/matheusevs/NodeJs.git"
+}
