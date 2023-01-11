@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/matheusevs/NodeJs/issues"
   },
-  "homepage": "https://github.com/matheusevs/NodeJs.git"
+  "homepage": "https://github.com/matheusevs/NodeJs#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
 }
