@@ -1,40 +1,12 @@
-const http = require('http');
+const express = require('express');
+const consign = require('consign');
 
-let server = http.createServer((req, res) => {
+let app = express();
 
-    console.log("URL:", req.url);
-    console.log("METHOD:", req.method);
+consign().include('routes').into(app);
 
+app.listen(3000, '127.0.0.1', () => {
 
-    switch(req.url){
-
-        case '/':
-            res.statusCode = 200;
-            res.setHeader('Content-Type', 'text/html');
-            res.end('<h1>Olá</h1>');
-            break;
-
-        case '/users':
-            res.statusCode = 200;
-            res.setHeader('Content-Type', 'application/json');
-            res.end(JSON.stringify({
-
-                users:[{
-
-                    name: 'Matheus',
-                    email: 'matheus@gmail.com',
-
-                }],
-
-            }));
-            break;
-
-    }
-
-});
-
-server.listen(3000, '127.0.0.1', () => {
-
-    console.log('servidor está rodando.');
+    console.log('Servidor está rodando.');
 
 });
